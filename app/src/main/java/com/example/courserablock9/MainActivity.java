@@ -3,6 +3,7 @@ package com.example.courserablock9;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View v){
         String message = ((EditText)findViewById(R.id.text)).getText().toString();
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Uri destination = Uri.parse("smsTo:5556");
+        Intent intent = new Intent(Intent.ACTION_SENDTO, destination);
         intent.putExtra("message", message);
         startActivity(intent);
     }
