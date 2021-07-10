@@ -13,6 +13,7 @@
         android:inputType="textMultiLine"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/send"
+        app:layout_constraintLeft_toLeftOf="parent"
 
  <Button
      android:id="@+id/send"
