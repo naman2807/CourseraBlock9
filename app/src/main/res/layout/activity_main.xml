@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/send"
 
  <Button
      android:id="@+id/send"
