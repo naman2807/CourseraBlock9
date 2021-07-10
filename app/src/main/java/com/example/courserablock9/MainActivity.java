@@ -18,5 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View v){
         String message = ((EditText)findViewById(R.id.text)).getText().toString();
         Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra("message", message);
     }
 }
